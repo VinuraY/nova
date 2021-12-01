@@ -1,6 +1,16 @@
 # Created by Vinura Yashohara(AnonyMSAV).
 # Server of the reverse shell program (Control unit).
-import socket
+import socket, os, platform
+
+system = platform.platform()
+
+if('Linux' in system):
+
+    os.system('clear')
+
+elif('Windows' in system):
+
+    os.system('cls')
 
 print('''
 	███╗   ██╗ ██████╗ ██╗   ██╗ █████╗ 
